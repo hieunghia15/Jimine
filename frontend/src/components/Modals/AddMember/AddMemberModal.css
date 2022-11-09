@@ -1,0 +1,51 @@
+/* enable absolute positioning */
+.inner-addon {
+  position: relative;
+}
+
+/* style glyph */
+.inner-addon .glyphicon{
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+  top: 1px;
+}
+
+/* align glyph */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 5px;}
+
+/* add padding  */
+.left-addon input  { 
+  padding-right: 30px;
+  position: relative; }
+.right-addon input { padding-right: 30px; position: relative;}
+
+
+
+/* body {
+  margin: 10px;
+} */
+
+.list-group-item{
+  border: 0;
+}
+/* .list-group-item:hover{
+  background-color: #a8a8a8
+} */
+.avatar-member {
+  object-fit: cover;
+  border-radius:50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+#result_search{
+  position: absolute;
+  display: none;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  z-index: 1000;
+}
+.background_color_addmember{
+  background-color: rgb(128, 128, 128,)
+}

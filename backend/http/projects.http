@@ -1,0 +1,69 @@
+### Lấy danh sách dự án
+GET  http://localhost:5000/api/project
+
+
+### Tìm dự án theo id
+GET  http://localhost:5000/api/project/find/id/62c3e9ba292c8f213d7e7455
+
+
+### Tìm dự án theo tên dự án
+GET  http://localhost:5000/api/project/find/name/ject-2
+
+### Tìm id dự án theo key dự án
+GET  http://localhost:5000/api/project/id/find/key/JM
+
+### Tìm dự án đã tạo của 1 người dùng
+GET  http://localhost:5000/api/project/find/user/id/user2
+
+
+### Tìm dự án có tham gia của 1 người dùng
+GET  http://localhost:5000/api/project/find/member/id/62c3e95b292c8f213d7e7453
+
+### Tìm dự án có tham gia của 1 người dùng limit 6
+GET  http://localhost:5000/api/project/find/join/id/62c3e95b292c8f213d7e7453
+
+
+### Tính tổng số dự án đã tạo trong 1 ngày
+GET http://localhost:5000/api/project/count/createAt/2022-06-28
+
+
+### Tạo 1 dự án
+POST http://localhost:5000/api/project/create
+Content-Type: application/json
+
+{
+    "Name": "test", 
+    "Category": "62c03dfa683d30adc75b9461",
+    "Description": "Software Test", 
+    "User_ID": "62bd3c42ee46748d0df28936",
+    "Key": "Software"
+}
+
+### Cập nhật 1 dự án
+PUT http://localhost:5000/api/project/update/id/62bd3cb5ee46748d0df28941
+Content-Type: application/json
+
+{
+    "Member": [
+        "62bd3c4aee46748d0df28939", 
+        "62bd3c4dee46748d0df2893c",
+        "62bd3c50ee46748d0df2893f"
+    ]
+}
+
+
+### Thêm 1 thành viên vào dự án
+PUT http://localhost:5000/api/project/member/update/idProject/62bd3cb5ee46748d0df28941/idMember/62bd3c4dee46748d0df2893c
+
+
+### Xóa 1 dự án
+DELETE http://localhost:5000/api/project/delete/id/62bad00eb215fc150bf54e4c
+
+
+### Xóa 1 thành viên trong dự án
+DELETE http://localhost:5000/api/project/member/delete/idProject/62bd3cb5ee46748d0df28941/idMember/62bd3c4aee46748d0df28939
+
+### Cập nhật 1 dự án
+PUT http://localhost:5000/api/project/updateTaskCounter/id/62c3e9ba292c8f213d7e7455
+### lay danh sach thanh vien cua du an
+GET http://localhost:5000/api/project/listmember/id?id=62c3e9ba292c8f213d7e7455

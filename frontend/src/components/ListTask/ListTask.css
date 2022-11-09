@@ -1,0 +1,28 @@
+.avatar {
+    /* Rounded border */
+    border-radius: 50%;
+    height: 35px;
+    margin:auto;
+}
+
+.avatar__image {
+    /* Rounded border */
+    border-radius: 50%;
+
+    /* Take full size */
+    height: 100%;
+    width: 100%;
+}
+.form-select-nghiadeptrai {
+    margin:auto;
+    width: 70%;
+}
+.breadcrumb {
+    /* Content is centered vertically */
+    align-items: center;
+    display: flex;
+}
+
+.breadcrumb__separator {
+    margin: 0 8px;
+}

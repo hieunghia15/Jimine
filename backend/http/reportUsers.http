@@ -1,0 +1,2 @@
+// Lấy tổng số công việc theo từng trạng thái của 1 dự án trong 1 ngày
+GET http://localhost:5000/api/report/user/count/task/by/status/idProject/62bd3cb5ee46748d0df28941/date/2022-07-02

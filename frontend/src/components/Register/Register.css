@@ -1,0 +1,85 @@
+p{
+    margin-bottom: 0;
+}
+.input_register{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    left: 50%;
+    top: 55px;
+    margin-left: -150px;
+    padding: 2px;
+    background: #FFFFFF;
+    border: 0.3px solid #ABA6A6;
+    border-radius: 3px;
+    font-size: 12px;
+}
+.incorrect{
+    border: 1px solid #F44336;
+}
+.input_field{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    left: 20px;
+    top: 20px;
+    font-size: 12px;
+    background: #FFFFFF;
+    border: 0.3px solid #ABA6A6;
+    border-radius: 3px;
+}
+.password{
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    left: 50%;
+    margin-left: -150px;
+    top: 100px;
+}
+.passwordConfirm{
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    left: 50%;
+    margin-left: -150px;
+    top: 145px;
+}
+.policy{
+    width: 80%;
+    margin: 0 auto;
+}
+.button_register{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    left: 50%;
+    top: 245px;
+    margin-left: -150px;
+    background: rgba(0, 82, 204, 0.8);
+    border: 2px solid #E9E9E9;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.link_login{
+    position: absolute;
+    width: 123px;
+    height: 18px;
+    left: 65%;
+    top: 290px;
+    
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    color:  rgba(0, 82, 204, 0.8);
+}

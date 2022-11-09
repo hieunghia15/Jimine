@@ -1,0 +1,37 @@
+### Create
+POST http://localhost:5000/api/issue/create
+Content-Type: application/json
+
+{
+    "Project_ID": "62bacf7db215fc150bf54e40",
+    "Type_ID": "62c03d4b683d30adc75b9341",
+    "Status_ID": "62bab13a45559e22cf4e7374", 
+    "Summary": "Sumarry", 
+    "Description": "Description"
+}
+
+### Find
+GET  http://localhost:5000/api/issue/
+
+### FindOne
+GET  http://localhost:5000/api/issue/find/id/62b9704fe4b089dd14fe93dd
+
+### Find 6 issue
+GET  http://localhost:5000/api/issue/get-task/62c3e8f7292c8f213d7e7443
+### Find All Issues In A Project
+GET  http://localhost:5000/api/issue/find/project/id/62c3e9ba292c8f213d7e7455/sort/UpdateStatusAt
+
+### Update
+PUT  http://localhost:5000/api/issue/update/id/62b9704fe4b089dd14fe93dd
+Content-Type: application/json
+
+{
+    "Status_ID": "Done"
+}
+
+### Delete
+DELETE http://localhost:5000/api/issue/delete/id/62b9704ee4b089dd14fe93d9
+### lay tong so task da hoan thanh cua du an
+GET http://localhost:5000/api/issue/62c3e9ba292c8f213d7e7455/counttask/62c03ed1683d30adc75ba40d
+### lay tong so task chua hoan thanh cua du an
+GET http://localhost:5000/api/issue/62c3e9ba292c8f213d7e7455/alltask

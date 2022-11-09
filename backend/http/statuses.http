@@ -1,0 +1,36 @@
+### Get all status
+GET http://localhost:5000/api/status 
+
+###
+GET http://localhost:5000/api/status/getMinNo
+
+### Get all status
+GET http://localhost:5000/api/status/sort/stt
+
+### Create staus
+POST http://localhost:5000/api/status/create
+Content-Type: application/json
+
+{
+    "Name": "To Do",
+    "Description": "Công việc cần làm"
+}
+
+### Find status 'Done'
+GET http://localhost:5000/api/status/find/done
+
+### Detail status 
+GET http://localhost:5000/api/status/detail/62b9aa08f509cf8f44a74723
+
+### Update status
+PUT http://localhost:5000/api/status/update/62b9aa08f509cf8f44a74723
+Content-Type: application/json
+
+{
+    "Name": "Done",
+    "Description": "Công việc hoàn thành",
+    "Stt": "3"
+}
+
+### Delete status
+DELETE http://localhost:5000/api/status/delete/62b9a8ed6dc3996e14cada6f

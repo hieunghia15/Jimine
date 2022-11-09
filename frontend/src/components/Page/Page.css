@@ -1,0 +1,106 @@
+img {
+  width: 100%;
+}
+
+#page_header {
+  padding: 5px 0;
+}
+
+#page_header .btn {
+  font-weight: bold;
+}
+
+.page_logo {
+  width: 180px;
+}
+
+#divTaoDuAnNgay {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  margin: 0;
+}
+
+#divTaoDuAnNgay .noiDung {
+  padding: 0 30px;
+}
+
+#divTaoDuAnNgay .title {
+  text-align: justify;
+  font-size: 40px;
+}
+
+#btnTaoDuAn {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 8px 30px;
+  color: #0052cc;
+  border: 2px solid #0052cc;
+  position: relative;
+  z-index: 0;
+}
+
+#btnTaoDuAn:hover {
+  color: white;
+}
+
+#btnTaoDuAn::before {
+  content: "";
+  background-color: #0052cc;
+  position: absolute;
+  top: -1%;
+  left: 0;
+  z-index: -1;
+  width: 0;
+  height: 102%;
+  transition: 0.5s;
+}
+
+#btnTaoDuAn:hover::before {
+  width: 100%;
+}
+
+#divDacDiemCuaJimine {
+  text-align: center;
+  padding: 55px 0;
+}
+
+#divDacDiemCuaJimine .title {
+  margin-bottom: 35px;
+  color: #0052cc;
+  font-weight: bold;
+}
+
+#danhSachDacDiem .dacDiem img {
+  width: 60%;
+  height: 150px;
+}
+
+#danhSachDacDiem .dacDiem p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 25px;
+}
+
+#divDangKyNgay {
+  background-color: #d4e7ee;
+  padding: 20px 20px;
+  margin: 0;
+}
+
+#divDangKyNgay .title {
+  margin-bottom: 15px;
+}
+
+#page_footer {
+  padding: 15px 0;
+}
+
+#copyRight {
+  opacity: 50%;
+}
+
+#iconContact i {
+  font-size: 35px;
+  padding: 0 10px;
+  color: black;
+}

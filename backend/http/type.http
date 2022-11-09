@@ -1,0 +1,29 @@
+###
+GET  http://localhost:5000/api/type
+###
+###
+GET  http://localhost:5000/api/type/get/62b9788f6ca6add4808dac43
+###
+GET  http://localhost:5000/api/type/istype?type=Tasks
+###
+POST   http://localhost:5000/api/type/create
+Content-Type: application/json
+
+{
+    "_id":"a",
+    "Name":"aa",
+    "Description":"Công việc con (nhánh) của một công việc khác",
+    "isType":"Tasks"
+}
+###
+PUT   http://localhost:5000/api/type/update/62b9788f6ca6add4808dac43
+Content-Type: application/json
+
+{
+    "Name":"Bug",
+    "Description":"Công việc con (nhánh) của một công việc khác",
+    "isType":"Tasks"
+}
+
+###
+DELETE    http://localhost:5000/api/type/delete/62b970a32a63318880d90f93
